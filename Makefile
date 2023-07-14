@@ -1,4 +1,4 @@
 maze: maze.c
-	gcc maze.c -o maze
+	gcc maze.c libattopng.c -o maze
 maze.asm: maze.c
-	gcc -S maze.c -o maze.asm
+	gcc -S maze.c libattopng.c -o maze.asm
